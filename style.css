@@ -1,0 +1,109 @@
+/* Resetting default styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and global styles */
+body, html {
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    line-height: 1.6;
+    font-size: 16px; /* Base font size */
+}
+
+/* Header styling */
+header {
+    background-color: #000; /* Keeping the header background black */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-media a {
+    margin: 0 15px;
+}
+
+.social-media img {
+    width: 24px; /* Size of social media icons */
+    height: 24px;
+    vertical-align: middle;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+    text-align: center; /* Center text for all sections */
+}
+
+/* Styling for all section containers */
+.intro, .experience, .education, .skills {
+    background-color: #222; /* Slightly lighter than black for visibility */
+    padding: 40px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255,255,255,0.1); /* Subtle white shadow for depth */
+}
+
+/* Intro section with larger text and styled button */
+.intro h1 {
+    font-size: 2.5em; /* Larger font size for main heading */
+    margin-bottom: 20px;
+}
+
+.intro p {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Bootstrap primary blue */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Profile picture styling */
+.profile-pic {
+    width: 150px; /* Profile picture size */
+    height: 150px;
+    border-radius: 50%; /* Circular profile picture */
+    margin: 20px auto;
+    border: 3px solid #fff; /* White border for profile picture */
+}
+
+/* Footer styling */
+footer {
+    background-color: #000; /* Footer with the same black background */
+    color: #666; /* Light grey for footer text */
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 40px; /* Space before footer */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .profile-pic {
+        width: 100px; /* Smaller profile picture on mobile */
+        height: 100px;
+    }
+    
+    .social-media a {
+        margin: 0 10px; /* Less space between icons on mobile */
+    }
+
+    .intro h1 {
+        font-size: 2em; /* Smaller heading on mobile */
+    }
+}
